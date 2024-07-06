@@ -1,0 +1,12 @@
+{
+  "name": "@bun-monorepo/server",
+  "version": "0.0.1",
+  "main": "./src/index.ts",
+  "scripts": {
+    "serve": "bun --watch run ./src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist --minify"
+  },
+  "dependencies": {
+    "@bun-monorepo/models": "workspace:*"
+  }
+}
